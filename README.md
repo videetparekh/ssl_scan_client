@@ -60,6 +60,9 @@ www.google.com
 If domains are being added on a regular basis, and we are testing 1000s of domains with this script already, there may be value in creating a client-server architecture, where a user can register/deregister a domain on the backend using the client. A load-balancer/randomizer between the client and server can decide which node to allocate the domain to.
 
 
+Certificate expiry events can be automated by the the Endpoint object (preferred over Certificate object due to the scope of information it can provide about the certificate). This can also be done as above, via email or Grafana alerts. 
+
+
 ### After some time, your report requires more enhancements requested by the Tech team of the company. How would you handle these "continuous" requirement changes in a sustainable manner?
 
 1. Establish a ticket mechanism of some sort. It's important to be able to prioritize and document changes to the product.
