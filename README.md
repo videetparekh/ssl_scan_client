@@ -45,7 +45,7 @@ Both the above can have the adverse effect of the host queue becoming too big at
 
 To start, it needs more robust error handling and logging. In the case of odd exceptions or errored requests, the tools should start publishing persisted logs and periodically send an email to notify the maintainer of any Error/Warning logs. 
 
-My understanding is that tools like Grafana can also help observe the performance of these scripts, but I do not have practical experience to comment any further. 
+My understanding is that tools like Prometheus+Grafana can also help observe the performance of these scripts, but I do not have practical experience to comment any further. 
 
 ### What would you do to handle adding new domains to scan or certificate expiry events from your service?
 
