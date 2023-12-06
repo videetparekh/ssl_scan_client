@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssl_scan_client"
+version = "1.0.0"
+description = "API to ping SSL-Scan for information about a provided hostname"
+requires-python = ">=3.8"
+readme = "README.md"
+dependencies = [
+    "requests",
+    "pandas",
+    "flatten-dict",
+    "openpyxl"
+]
+
+[project.scripts]
+ssl_scan_client = "client.main:main"
